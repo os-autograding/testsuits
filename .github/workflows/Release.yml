@@ -18,7 +18,7 @@ jobs:
         id: runcmd
         with:
           arch: riscv
-          distro: ubuntu18.04
+          distro: alpine
 
           # Not required, but speeds up builds by storing container images in
           # a GitHub package registry.
