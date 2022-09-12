@@ -27,9 +27,9 @@ jobs:
           # Set an output parameter `uname` for use in subsequent steps
           # uname -az
           run: |
-            apt install build-essential
-            apt install musl-tools
-            apt-get install libncurses5-dev libncursesw5-dev
+            apk add make 
+            apk add gcc musl-dev g++ zlib-dev
+            apk add autoconf
             gcc
             ln -s /usr/include/linux /usr/include/riscv64-linux-musl/linux
             ln -s /usr/include/asm-generic /usr/include/riscv64-linux-musl/asm
